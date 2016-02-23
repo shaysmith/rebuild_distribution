@@ -4,7 +4,7 @@ This script is based on code found at:
 
 When run, it will attempt to rebuild a Drupal distribution based on user input.
 
-##### User prompts
+## User prompts
 The user will be prompted for the following information:
 
 ##### Distribution name.
