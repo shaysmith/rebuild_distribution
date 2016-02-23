@@ -1,6 +1,6 @@
 # rebuild_distribution
 This script is based on code found at:
-https://dev.acquia.com/blog/maintaining-your-installed-drupal-distro
+[dev.acquia.com/blog/maintaining-your-installed-drupal-distro](https://dev.acquia.com/blog/maintaining-your-installed-drupal-distro)
 
 When run, it will attempt to rebuild a Drupal distribution based on user input.
 
