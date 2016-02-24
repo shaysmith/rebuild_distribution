@@ -32,6 +32,9 @@ echo "Moving robots.txt out of docroot..."
 cp docroot/robots.txt .
 echo "Moving sites directory out of docroot..."
 cp -rf docroot/sites .
+if [ -f docroot/favicon.ico ]
+	cp docroot/favicon.ico .
+fi
 
 echo "Removing docroot..."
 rm -rf docroot
@@ -50,6 +53,9 @@ echo "Removing default robots.txt from docroot..."
 rm docroot/robots.txt
 echo "Removing default sites directory from docroot..."
 rm -rf docroot/sites
+if [ -f favicon.ico ]
+        rm docroot/favicon.ico .
+fi
 
 #/Let's put the custom bits back into the docroot and clean up our mess.
 echo "Moving custom .htaccess back into docroot..."
@@ -58,6 +64,10 @@ echo "Moving custom robots.txt back into docroot..."
 mv robots.txt docroot/robots.txt
 echo "Moving custom sites directory back into docroot..."
 mv sites docroot/sites
+if [ -f favicon.ico ]
+        cp favicon.ico docroot/favicon.ico
+fi
+
 rm -rf ra-projects
 
 #/And now for some git specific juju.
