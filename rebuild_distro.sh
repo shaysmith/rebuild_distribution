@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #/Let's query the user for the correct distribution to update.
 echo "https://www.drupal.org/project/project_distribution"
