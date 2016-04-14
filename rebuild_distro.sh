@@ -22,10 +22,10 @@ cd "$(git rev-parse --show-toplevel)"
 #/Grabbing a copy of the distribution repo to work with.
 echo "Pulling in latest updates on branch $BRANCH from remote $GITURL."
 mkdir ra-projects
-git clone $GITURL ra-projects/${distribution_name}
+git clone "$GITURL" ra-projects/"${distribution_name}"
 
 #/Pull in the correct version of the distro.
-git subtree pull --squash --prefix=$PREFIX $GITURL $BRANCH
+git subtree pull --squash --prefix="$PREFIX" "$GITURL" "$BRANCH"
 
 #/Let's preserve any custom bits by moving them out of the docroot.
 cd "$(git rev-parse --show-toplevel)"
